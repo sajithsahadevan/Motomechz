@@ -1,0 +1,97 @@
+<!-- Booking registrtaion page -->
+<html>
+    <head>
+        <title>MotoMechz</title>
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+        <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+<style>
+.login  {
+    
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px black;
+    width: 450px;
+    background-color:white;
+   padding:5px;
+   padding-top: 70px;
+   padding-bottom: 70px;
+
+}
+#email,#pass{
+        width: 200px;
+      }
+
+</style>
+    </head>
+    <body  >  
+    <nav class="navbar navbar-default navbar-fixed white no-background bootsnav navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+        <div class="container" >
+            <!-- Start Header Navigation -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li class="button-holder">
+                    <button type="button" onclick="window.location.href = 'index.html';"class="btn btn-blue navbar-btn" data-toggle="modal" data-target="#SignIn">Log Out</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        
+        <center>
+            <h2>Service Booking</h2><br><br>
+        <form class="login" action="/controllers/register-controller1" method="POST">
+        
+            <hr>
+            <div class="form-group" style="width: 300px;">
+                <input type="text" class="form-control" name="name" placeholder=" Name" required="required">
+            </div>
+            <div class="form-group" style="width: 300px;">
+                <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+            </div>
+            <div class="form-group" style="width: 300px;">
+                <input type="text" class="form-control" name="vehicle_no" placeholder="Vehicle no" required="required">
+            </div>
+            <div class="form-group" style="width: 300px;">
+                <input type="text" class="form-control" name="vehicle_name" placeholder="Vehicle name" required="required">
+            </div>
+            <div class="form-group" style="width: 300px;">
+                <input type="text" class="form-control" name="phone_no" placeholder="Phone no" required="required">
+            </div>
+            <div >
+               <br>
+                <label class="checkbox-inline">
+                    <input type="radio" name="service" value="Water service">Water Service 
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="radio" name="service" value="General service">General Service
+                  </label><br><br>
+                  <label class="checkbox-inline">
+                    <input type="radio" name="service" value="Premium service">Premium Service
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="radio" name="service" value="All in one service">All in one Service
+                  </label>
+            </div>
+            <br>
+            
+            <br><br>
+            <div class="form-group text-center">
+                <center>
+                <button type="submit" id="register" class="btn btn-blue btn-block" style="width: 150px; ;">Register</button>
+                </center>
+            </div>
+       
+        </form>  
+    </center>
+    <script>
+        $("#register").click(function() {
+  alert("Booking Succesful");
+});
+        </script>  
+
+    </body>
+    </html>

@@ -1,0 +1,70 @@
+<!-- Sign in page -->
+<html>
+    <head>
+      <title>MotoMechz</title>
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+        <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+<style>
+     .login  {
+    
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px black;
+    width: 400px;
+    background-color:white;
+   padding:5px;
+   padding-top: 70px;
+   padding-bottom: 90px;
+
+}
+#email,#pass{
+        width: 200px;
+      }
+
+</style>
+</head>
+    <body>   
+    <nav class="navbar navbar-default navbar-fixed white no-background bootsnav navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+        <div class="container" >
+            <!-- Start Header Navigation -->
+            
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li class=" scroll"><a href="index.html">Home</a></li>
+                <li class="scroll"><a href="aboutus.html">About us</a></li>
+                <li class="scroll"><a href="service.html">Services</a></li>
+                <li class="scroll"><a href="contactus.html">Contact us</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+ 
+<center>  <div class="login">
+        <h2>Sign In</h2>
+        <br>
+        <form action="/controllers/authenticate-controller" method="POST">
+          <div class="form-group">
+    
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" > 
+          </div>
+          <br>
+          <div class="form-group">
+           
+            <input type="password" class="form-control" id="pass" placeholder="Password" name="password">
+          </div>
+          
+          <br>
+          <div class="form-group text-center">
+            <button type="submit" name="submit"class="butn" >Sign In</button>
+        </div>
+        </form> 
+    </div>  
+</center>
+
+    </body>
+</html>
